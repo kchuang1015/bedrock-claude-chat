@@ -151,7 +151,7 @@ Resources:
               "build": {
                 "commands": [
                   "echo 'Build phase...'",
-                  "git clone --branch $VERSION https://github.com/aws-samples/bedrock-claude-chat.git",
+                  "git clone --branch $VERSION https://github.com/kchuang1015/bedrock-claude-chat.git",
                   "cd bedrock-claude-chat",
                   "if [ \"$ALLOW_SELF_REGISTER\" = \"false\" ]; then sed -i 's/\"selfSignUpEnabled\": true/\"selfSignUpEnabled\": false/' cdk/cdk.json; fi",
                   "if [ \"$ENABLE_LAMBDA_SNAPSTART\" = \"false\" ]; then sed -i 's/\"enableLambdaSnapStart\": true/\"enableLambdaSnapStart\": false/' cdk/cdk.json; fi",
